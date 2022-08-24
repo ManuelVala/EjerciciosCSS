@@ -1,0 +1,38 @@
+.flex-container {
+    display: flex;
+    background-color: orangered;
+    flex-wrap: wrap;
+    flex-direction: row; /*column, column-reverse,row,row reverse*/ 
+    justify-content: flex-start;
+    
+    padding: 10px;
+    
+}
+
+.flex-container div {
+    background-color: blue;   
+    margin: 1px;
+    width: 150px;
+    height: 150px;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    padding: 20px;
+    border: 20%;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+@media (min-width:300px){
+
+    .flex-direction: row; /*column, column-reverse,row,row reverse*/ 
+    .flex-container div{
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    text-align: justify;
+    }
+    }
